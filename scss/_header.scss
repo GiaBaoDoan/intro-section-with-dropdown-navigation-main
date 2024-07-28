@@ -1,0 +1,72 @@
+.header {
+  &-container {
+    margin: auto;
+    max-width: 95%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-parent {
+    position: relative;
+  }
+  &-box {
+    position: absolute;
+    background-color: white;
+    padding: 25px 20px;
+    width: 180px;
+    top: 40px;
+    border-radius: 8px;
+    right: 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px 0;
+    .item {
+      display: flex;
+      font-size: 16px;
+      gap: 0 15px;
+      align-items: center;
+    }
+  }
+  &-menu {
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+    .company-box {
+      left: 0;
+    }
+    .nav {
+      display: flex;
+      gap: 0 50px;
+      .arrow-down {
+        vertical-align: middle;
+        margin-left: 4px;
+      }
+      span {
+        color: $medium-gray;
+        font-weight: $weight;
+        &:hover {
+          color: $almost-black;
+        }
+      }
+    }
+  }
+  .btn {
+    &--login {
+      border: 0;
+    }
+    &--register {
+      border-radius: 15px;
+      border: 2px solid $medium-gray;
+      &:hover {
+        border-color: $almost-black;
+      }
+    }
+  }
+  &-humberger {
+    display: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,35 @@
+body {
+    font-family: $font-primary;
+    background-color: $almost-white;
+    font-size: 18px;
+}
+.btn {
+    font-family: $font-primary;
+    padding: 15px 25px;
+    color: $medium-gray;
+    font-weight: $weight;
+    font-size: 16px;
+    border-radius: 15px;
+    &:hover {
+        color: $almost-black;
+    }
+}
+.hidden {
+    display: none !important;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba($color: $almost-black, $alpha: 0.6);
+    @media only screen and (min-width : 1024px) {
+        display: none;
+    }
+}
+.show-off {
+    .sidebar {
+        transform: translateX(0);
+    }
+}

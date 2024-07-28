@@ -1,0 +1,55 @@
+.feature {
+  margin: 50px 0;
+  &-main {
+   margin: auto;
+   padding: 0 20px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap: 50px 20px;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px 0px;
+  }
+  &-heading {
+    font-size: 80px;
+    max-width: 525px;
+  }
+ 
+  &-brands {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    gap:  25px;
+    img { 
+      object-fit: contain;
+    }
+  }
+  &-text {
+    line-height: 180%;
+    max-width: 400px;
+    color: $medium-gray;
+    font-weight: $weight;
+  }
+  &-image {
+    max-width: 450px;
+    .img-mobile {
+      display: none;
+    }
+  }
+  .btn {
+    &--more {
+      background-color: $almost-black;
+      color: white;
+      font-size: 18px;
+      transition: all 0.2s;
+      &:hover {
+        background-color: transparent;
+        color: $almost-black;
+      }
+    }
+  }
+}
